@@ -1,0 +1,27 @@
+{
+    "name": "mageinn/email-whitelist",
+    "require": {
+        "php": ">=7.3"
+    },
+    "type": "magento2-module",
+    "version": "1.0.0",
+    "license": [
+        "OSL-3.0"
+    ],
+    "authors":[
+        {
+            "name": "Mageinn",
+            "email": "sales@mageinn.com",
+            "homepage": "mageinn.com",
+            "role": "Company"
+        }
+    ],
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Mageinn\\EmailWhitelist\\": ""
+        }
+    }
+}

@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Magento\Email\Model\Transport">
+        <plugin name="mageinn_email_whitelist_check_whitelist_email" type="Mageinn\EmailWhitelist\Plugin\CheckWhiteListEmailsPlugin"/>
+    </type>
+    <type name="Magento\Framework\Mail\Template\TransportBuilder">
+        <plugin name="mageinn_email_whitelist_transport_builder_plugin" type="Mageinn\EmailWhitelist\Plugin\TransportBuilderPlugin"/>
+    </type>
+</config>
